@@ -253,7 +253,7 @@
     const warning = document.getElementById("warning");
 
     accountInput.addEventListener("input", () => {
-      if (/^\d{10}$/.test(accountInput.value)) {
+      if (/^\d{8}$/.test(accountInput.value)) {
         startBtn.disabled = false;
         warning.style.display = "none";
       } else {
